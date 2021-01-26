@@ -8,4 +8,7 @@ public interface UserService {
     //获取用户列表
     List<User> getList();
 
+    //查询用户
+    List<User> findUser(String name,String password);
+
 }

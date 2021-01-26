@@ -17,4 +17,10 @@ public class UserServiceImp implements UserService {
         List<User> users =userRepository.findAll();
         return users;
     }
+
+    @Override
+    public List<User> findUser(String name, String password) {
+        List<User> user =userRepository.findUser(name,password);
+        return user;
+    }
 }
